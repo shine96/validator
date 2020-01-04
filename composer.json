@@ -1,0 +1,20 @@
+{
+    "name": "mimic/validator",
+    "description": "基于Laravel封装的验证器",
+    "authors": [
+        {
+            "name": "shine",
+            "email": "10670374@qq.com"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "validator\\": "src/"
+        }
+    },
+    "require": {
+        "php": ">=7.0",
+        "illuminate/support":"^6.8"
+    },
+    "license": "MIT"
+}
