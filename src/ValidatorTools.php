@@ -1,8 +1,8 @@
 <?php
 namespace Validator;
 
-require 'Reflection.php';
 
+use ReflectionClass;
 use Illuminate\Support\Facades\Validator;
 class ValidatorTools
 {
