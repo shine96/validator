@@ -116,7 +116,7 @@ class ValidatorTools
      */
     public function scan() {
         try{
-            $classInfo = new \Reflection(get_class($this));
+            $classInfo = new ReflectionClass(get_class($this));
             $classNameSpace = $classInfo->getName();
             foreach ($classInfo->getMethods() as $method) {
                 if($classNameSpace == $method->class && $method->name != '__construct') {
