@@ -14,7 +14,7 @@
     },
     "require": {
         "php": ">=7.0",
-        "illuminate/support":"^6.8"
+        "illuminate/support":"^5.0"
     },
     "license": "MIT"
 }
