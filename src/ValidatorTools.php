@@ -56,7 +56,13 @@ class ValidatorTools
 
         foreach ($this->rules as $key => $rule) {
             if(!in_array($key, $rules)) {
-                unset($this->rules[$key]);
+                if (is_array($rules[$key])){
+                    $this->rules[$key] = $rules[$key][0];
+                }else if (is_array(explode('|',$rules[$key]))){
+                    $this->rules[$key] = $rules[$key];
+                }else{
+                    unset($this->rules[$key]);
+                }
             }
         }
         //$this->rules    = array_only($this->rules, $rules);
